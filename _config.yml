@@ -1,3 +1,4 @@
 name: sethk.github.io
 markdown: redcarpet
-pygments: true
+highlighter: pygments
+exclude: [Gemfile, Gemfile.lock, bin, vendor]

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+---
+.container
+  .jumbotron
+    .row
+      .col-xs-4
+        %img.thumbnail.img-responsive{src: 'http://www.gravatar.com/avatar/5a7fb135618cd6b2218c8d4ecd58e944?s=300'}
+      .col-xs-8
+        %p
+          You have reached
+          = succeed ',' do
+            %a{href: 'http://www.set.hk/'} set.hk
+          the personal homepage of Seth Kingsley.
+        %form.form-inline
+          %p
+            I am
+            %select.form-control{disabled: true}
+              %option NOT
+            currently looking for a job.
+        %p
+          The best way to get in touch with me is via email:
+          = succeed '.' do
+            %span#email>
+              %span.text-muted> (email hidden without JavaScript enabled.)
+          :javascript
+            var e = "se" + "th" + "k" + "@" + "me" + "ow" + "fi" + "sh" + "ie" + "s" + "." + "co" + "m";
+            $('#email').html("<a href=\"mailto:" + e + "\">" + e + "</a>");
