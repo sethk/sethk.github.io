@@ -1,0 +1,55 @@
+---
+layout: default
+title: Seth's Graphics Code
+---
+.container
+  %h2 Seth's Graphics Code
+
+  %a{href: 'https://github.com/sethk/PixAccCurvedSurf'}
+    %h3
+      PixAccCurvSurf
+      %small.text-muted
+        %i C++, OpenGL, GLSL, GLFW
+      %button.pull-right.btn.btn-sm.btn-default{type: 'button'}
+        %span.fab.fa-fw.fa-github
+        Show on GitHub
+  %p A demo app for the iPASS rendering technique for adaptive tessellation of curved surfaces
+  %p
+    The technique is described in the paper
+    = succeed '.' do
+      %a{href: 'https://www.cise.ufl.edu/research/SurfLab/papers/1109reyes.pdf'}
+        %i> Efficient Pixel-Accurate Rendering of Curved Surfaces
+
+  .row
+    .col-sm-10.col-md-7
+      .embed-responsive.embed-responsive-16by9
+        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/297544352" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  <hr />
+
+  %a{href: 'https://github.com/sethk/SOGL'}
+    %h3
+      SOGL
+      %small.text-muted
+        %i C99, SDL
+      %button.pull-right.btn.btn-sm.btn-default{type: 'button'}
+        %span.fab.fa-fw.fa-github
+        Show on GitHub
+  %p Toy software renderer with an OpenGL API
+
+  .row{style: 'font-size: 0'}
+    .col-md-12
+      <img src="img/sogl/simple.png" height="120" alt="simple" />
+      <img src="img/sogl/prim.png" height="120" alt="prim" />
+      <img src="img/sogl/cube.png" height="120" alt="cube" />
+      <img src="img/sogl/sphere.png" height="120" alt="sphere" />
+    .col-md-12
+      <img src="img/sogl/material.png" height="180" alt="material" />
+      <img src="img/sogl/scene.png" height="180" alt="scene" />
+      <img src="img/sogl/eval.png" height="180" alt="eval" />
+    .col-md-12
+      <img src="img/sogl/glutplane.png" height="200" alt="glutplane" />
+      <img src="img/sogl/movelight.png" height="200" alt="movelight" />
+      <img src="img/sogl/n64.png" height="200" alt="n64" />
+
+  %p
