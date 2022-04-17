@@ -18,8 +18,11 @@ title: Home
             I am
             -#%select.form-control{disabled: true}
               %option NOT
-            currently looking for a job.
-            %a{href: 'Seth Kingsley Resume.pdf'} Here is my résumé.
+            not
+            currently looking for a job, but
+            = succeed ',' do
+              %a{href: 'Seth Kingsley Resume.pdf'} here is my résumé
+            \(last updated in early 2021\).
         %p
           The best way to get in touch with me is via email:
           = succeed '.' do
