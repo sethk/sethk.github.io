@@ -2,3 +2,4 @@ name: sethk.github.io
 markdown: redcarpet
 highlighter: pygments
 exclude: [Gemfile, Gemfile.lock, bin, vendor]
+destination: docs
